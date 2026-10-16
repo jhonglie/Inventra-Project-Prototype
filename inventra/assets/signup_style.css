@@ -20,6 +20,7 @@
   font-display: swap;
 }
 
+
 :root {
     --text-color: #050505;
     --link-color: #3f00fd;
@@ -28,6 +29,7 @@
     --font-bold:"sansitaBold",sans-serif;
     --font-regular: "sansitaRegular",sans-serif;
 }
+
 
 html {
     margin: 0;
@@ -46,9 +48,9 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
+
 }
 a {
-    margin-top:5px;
     color: #02c8ff;
     font-family:var(--font-bold);
 }
@@ -60,7 +62,7 @@ h1{
     display: flex;
     flex-direction: column; 
     align-items:center;
-    padding: 11rem;
+    padding: 10rem;
     
 }
 .main form{
@@ -68,35 +70,52 @@ h1{
     display:flex;
     flex-direction:column;
 }
-.mainBg{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    background-color:#050505dc;
-    padding-left:10rem;
-    padding-right:10rem;
-    border-radius:30px;
-    padding-bottom:2rem;
-}
-form button{
-    height:35px;
-    width:12rem;
-    border-radius:30px;
-    padding-bottom:5px;
-    font-size:20px;
-    font-family:var(--font-bolder);
-    font-weight:bold;
-    background: radial-gradient(circle, #08FAF6,#04C3C0);
-    cursor:pointer;
-    border-style:hidden
-}
-
 form input{
     border-radius:25px;
     height:35px;
     width: 15rem;
     padding-left:20px;
+    border-style:none;
 }
-span{
-    color:#ffffff;
+.mainBg{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items:center;
+    background-color:#050505dc;
+    padding-left:3rem;
+    padding-right:1rem;
+    border-radius:30px;
+    padding-bottom:1rem;
+    padding-top:1rem;
+}
+.mainBg img{
+    height:23rem;
+    width:auto;
+    padding-left:3rem;
+}
+.info_icon{
+    position:relative;
+    right:9.7rem;
+    bottom:1.26rem;
+}
+.panel{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+form button{
+    height:35px;
+    width:12rem;
+    border-radius:30px;
+    font-family:var(--font-bolder);
+    font-size:20px;
+    font-weight:bold;
+    background: radial-gradient(circle, #08FAF6,#04C3C0);
+    cursor:pointer;
+    padding-bottom:4px;
+    border-style:hidden;
+
+}
+.notif{
+    color:white;
 }
