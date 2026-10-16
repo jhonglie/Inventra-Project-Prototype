@@ -1,2 +1,2 @@
 # Inventra-Project-Prototype
-Inventra is a simple and offline POS System school project designed for small businesses 
+Inventra is a simple and offline POS System School Project designed for small businesses currently on prototype
