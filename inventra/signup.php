@@ -55,19 +55,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="main">
         <div class="mainBg">
+<img src="assets/images/signin_art.png" class="signin_art">
+        <div class="panel">
+            <svg class="info_icon" width="7" height="18" viewBox="0 0 7 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.6636 1.62857C1.6636 0.729464 2.40875 0 3.3272 0C4.24564 0 4.99079 0.729464 4.99079 1.62857C4.99079 2.52768 4.24564 3.25714 3.3272 3.25714C2.40875 3.25714 1.6636 2.52768 1.6636 1.62857ZM0 6.51429C0 5.91375 0.495613 5.42857 1.10907 5.42857H3.3272C3.94065 5.42857 4.43626 5.91375 4.43626 6.51429V15.2H5.54533C6.15878 15.2 6.65439 15.6852 6.65439 16.2857C6.65439 16.8863 6.15878 17.3714 5.54533 17.3714H1.10907C0.495613 17.3714 0 16.8863 0 16.2857C0 15.6852 0.495613 15.2 1.10907 15.2H2.21813V7.6H1.10907C0.495613 7.6 0 7.11482 0 6.51429Z" fill="white"/>
+</svg>
             <h1 id="title"> ADMIN SIGN UP </h1>
 
             <form action="signup.php" method="POST">
                 <input type="text" name="register_username" placeholder="Enter a username" required>
-                <span><?= $username_notif ?><br></span>
+                <span class="notif"><?= $username_notif ?><br></span>
                 <input type="password" name="register_passcode" placeholder="Enter a passcode" required>
-                <span><?= $passcode_notif ?><br></span>
-                <input type="text" name="email" placeholder="Enter your email" required><span><?= $email_notif ?><br></span>
+                <span class="notif"><?= $passcode_notif ?><br></span>
+                <input type="text" name="email" placeholder="Enter your email" required><span class="notif"><?= $email_notif ?><br></span>
 
 
-                <button type="submit">CREATE ACCOUNT</button>
+                <button type="submit">CREATE ACCOUNT</button><br>
                 <a href="index.php" class="signupButton"> Or Sign In</a>
             </form>
+            </div>
         </div>
     </div>
 
